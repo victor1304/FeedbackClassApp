@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Feedbackapp.View.ClassEvaluationPage">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label
+                Text="Avaliação"
+                TextColor="Black"
+                FontSize="Large"
+                HorizontalOptions="Start"
+                VerticalOptions="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                x:Name="mainStack"
+                BindableLayout.ItemsSource="{Binding Evaluation.Perguntas}"
+                Padding="10">
+                <Label
+                    Text="Nome:"
+                    TextColor="Black"
+                    FontSize="12" />
+                <Entry
+                    Text="{Binding Name, Mode=TwoWay}"
+                    Placeholder="(informação opcional)" />
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label
+                                Margin="0,20,0,0"
+                                Text="{Binding Pergunta}"
+                                FontSize="Large"
+                                TextColor="Black"
+                                FontAttributes="Bold" />
+                            <StackLayout
+                                Orientation="Horizontal"
+                                HorizontalOptions="CenterAndExpand"
+                                Padding="10">
+                                <ImageButton
+                                    Source="bad.png"
+                                    Command="{Binding Source={x:Reference mainStack}, Path=BindingContext.BadCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="42"
+                                    IsVisible="{Binding BadColored, Mode=TwoWay}" />
+                                <ImageButton
+                                    Source="badGrey.png"
+                                    Command="{Binding Source={x:Reference mainStack}, Path=BindingContext.BadCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="42"
+                                    IsVisible="{Binding BadGrey, Mode=TwoWay}" />
+                                <ImageButton
+                                    Source="regular.png"
+                                    Command="{Binding Source={x:Reference mainStack}, Path=BindingContext.RegularCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="42"
+                                    IsVisible="{Binding RegularColored, Mode=TwoWay}" />
+                                <ImageButton
+                                    Source="regularGrey.png"
+                                    Command="{Binding Source={x:Reference mainStack}, Path=BindingContext.RegularCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="42"
+                                    IsVisible="{Binding RegularGrey, Mode=TwoWay}" />
+                                <ImageButton
+                                    Source="good.png"
+                                    Command="{Binding Source={x:Reference mainStack}, Path=BindingContext.GoodCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="42"
+                                    IsVisible="{Binding GoodColored, Mode=TwoWay}" />
+                                <ImageButton
+                                    Source="goodGrey.png"
+                                    Command="{Binding Source={x:Reference mainStack}, Path=BindingContext.GoodCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="42"
+                                    IsVisible="{Binding GoodGrey, Mode=TwoWay}" />
+                                <ImageButton
+                                    Source="excellent.png"
+                                    Command="{Binding Source={x:Reference mainStack}, Path=BindingContext.ExcellentCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="42"
+                                    IsVisible="{Binding ExcellentColored, Mode=TwoWay}" />
+                                <ImageButton
+                                    Source="excellentGrey.png"
+                                    Command="{Binding Source={x:Reference mainStack}, Path=BindingContext.ExcellentCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="42"
+                                    IsVisible="{Binding ExcellentGrey, Mode=TwoWay}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+            <Button
+                Text="Avaliar!"
+                Command="{Binding EvaluateCommand}"
+                VerticalOptions="EndAndExpand"
+                Margin="10"
+                BackgroundColor="{StaticResource Key=OpenClassGreen}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
