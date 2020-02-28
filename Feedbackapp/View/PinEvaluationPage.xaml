@@ -38,7 +38,7 @@
                 TextColor="Black" />
             <Button
                 Text="Avaliar!"
-                BackgroundColor="{StaticResource Key=OpenClassGreen}"
+                BackgroundColor="{StaticResource Key=FeedbackClassGreen}"
                 VerticalOptions="Center"
                 TextColor="Black"
                 Command="{Binding EvaluateCommand}" />

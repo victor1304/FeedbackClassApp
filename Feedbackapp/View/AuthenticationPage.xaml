@@ -39,13 +39,13 @@
                     Text="Email:"
                     Grid.Column="0"
                     Grid.Row="0"
-                    TextColor="{StaticResource Key=OpenClassGreen}"
+                    TextColor="{StaticResource Key=FeedbackClassGreen}"
                     VerticalTextAlignment="Center" />
                 <Label
                     Text="Senha: "
                     Grid.Column="0"
                     Grid.Row="1"
-                    TextColor="{StaticResource Key=OpenClassGreen}"
+                    TextColor="{StaticResource Key=FeedbackClassGreen}"
                     VerticalTextAlignment="Center" />
                 <Entry
                     Text="{Binding Email}"
@@ -53,7 +53,7 @@
                     Placeholder="exemplo@exemplo.com"
                     Grid.Column="1"
                     Grid.Row="0"
-                    PlaceholderColor="{StaticResource Key=OpenClassGreen}" />
+                    PlaceholderColor="{StaticResource Key=FeedbackClassGreen}" />
                 <Entry
                     Text="{Binding Password}"
                     TextColor="Black"
@@ -61,20 +61,20 @@
                     Grid.Column="1"
                     Grid.Row="1"
                     IsPassword="True"
-                    PlaceholderColor="{StaticResource Key=OpenClassGreen}" />
+                    PlaceholderColor="{StaticResource Key=FeedbackClassGreen}" />
             </Grid>
             <Button
                 Command="{Binding LoginCommand}"
                 Text="Entrar"
                 CornerRadius="5"
                 TextColor="Black"
-                BackgroundColor="{StaticResource Key=OpenClassGreen}"
+                BackgroundColor="{StaticResource Key=FeedbackClassGreen}"
                 HorizontalOptions="Center"
                 VerticalOptions="End" />
             <Button
                 Command="{Binding SignUpCommand}"
                 Text="Cadastrar-se"
-                TextColor="{StaticResource Key=OpenClassGreen}"
+                TextColor="{StaticResource Key=FeedbackClassGreen}"
                 BackgroundColor="Transparent"
                 HorizontalOptions="Center"
                 VerticalOptions="End" />

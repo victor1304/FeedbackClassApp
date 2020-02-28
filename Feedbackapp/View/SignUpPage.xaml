@@ -45,7 +45,7 @@
                         Grid.Column="0"
                         Grid.Row="0"
                         VerticalTextAlignment="Center"
-                        TextColor="{StaticResource Key=OpenClassGreen}" />
+                        TextColor="{StaticResource Key=FeedbackClassGreen}" />
                     <Entry
                         Text="{Binding Name}"
                         Placeholder="Nome Completo"
@@ -56,7 +56,7 @@
                         Grid.Column="0"
                         Grid.Row="1"
                         VerticalTextAlignment="Center"
-                        TextColor="{StaticResource Key=OpenClassGreen}" />
+                        TextColor="{StaticResource Key=FeedbackClassGreen}" />
                     <Entry
                         Text="{Binding Email}"
                         Placeholder="E-mail"
@@ -67,7 +67,7 @@
                         Grid.Column="0"
                         Grid.Row="2"
                         VerticalTextAlignment="Center"
-                        TextColor="{StaticResource Key=OpenClassGreen}" />
+                        TextColor="{StaticResource Key=FeedbackClassGreen}" />
                     <Entry
                         Text="{Binding Pass}"
                         Placeholder="*******"
@@ -80,7 +80,7 @@
                     Text="Cadastrar"
                     HorizontalOptions="Center"
                     VerticalOptions="End"
-                    BackgroundColor="{StaticResource Key=OpenClassGreen}" />
+                    BackgroundColor="{StaticResource Key=FeedbackClassGreen}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

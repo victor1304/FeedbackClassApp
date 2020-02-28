@@ -22,13 +22,13 @@
                 TextColor="Black"
                 Text="Histórico de avaliações"
                 Command="{Binding SeeHistoryCommand}"
-                BackgroundColor="{StaticResource Key=OpenClassGreen}" />
+                BackgroundColor="{StaticResource Key=FeedbackClassGreen}" />
             <Button
                 HeightRequest="72"
                 TextColor="Black"
                 Text="Criar avaliação"
                 Command="{Binding PublishEvaluationCommand}"
-                BackgroundColor="{StaticResource Key=OpenClassGreen}" />
+                BackgroundColor="{StaticResource Key=FeedbackClassGreen}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

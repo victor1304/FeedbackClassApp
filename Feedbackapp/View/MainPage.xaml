@@ -30,13 +30,13 @@
                     TextColor="Black"
                     Text="Sou professor"
                     Command="{Binding ProfLogin}"
-                    BackgroundColor="{StaticResource Key=OpenClassGreen}" />
+                    BackgroundColor="{StaticResource Key=FeedbackClassGreen}" />
                 <Button
                     HeightRequest="72"
                     TextColor="Black"
                     Text="Sou aluno"
                     Command="{Binding AlunoEvaluation}"
-                    BackgroundColor="{StaticResource Key=OpenClassGreen}" />
+                    BackgroundColor="{StaticResource Key=FeedbackClassGreen}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

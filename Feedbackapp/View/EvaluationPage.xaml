@@ -83,7 +83,7 @@
                     Margin="5"
                     FontSize="20"
                     Command="{Binding AddQuestion}"
-                    BackgroundColor="{StaticResource Key=OpenClassGreen}"
+                    BackgroundColor="{StaticResource Key=FeedbackClassGreen}"
                     HeightRequest="52"
                     WidthRequest="52" />
 
@@ -103,7 +103,7 @@
                     Text="Compartilhar"
                     VerticalOptions="End"
                     TextColor="Black"
-                    BackgroundColor="{StaticResource Key=OpenClassGreen}"
+                    BackgroundColor="{StaticResource Key=FeedbackClassGreen}"
                     Command="{Binding ShareQuestion}" />
             </StackLayout>
         </ScrollView>
